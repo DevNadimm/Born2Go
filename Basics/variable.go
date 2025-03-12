@@ -14,11 +14,9 @@ func main() {
 	fmt.Println("Student Major:", studentMajor)
 	fmt.Println("Student Age:", studentAge)
 
-
 	// Alternative
 	sId := 200384
 	sName := "Nadim"
-
 
 	fmt.Printf("\n\n")
 	fmt.Printf("Student ID: %d\n", sId)
@@ -26,6 +24,7 @@ func main() {
 	
 	// Variable update
 	sName = "Md. Nadimul Haque Chowdhury"
+	
 	fmt.Printf("\n\n")
 	fmt.Println("Unpdated Name:", sName)
 	fmt.Printf("\n\n")
