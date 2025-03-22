@@ -9,6 +9,8 @@ func main() {
 
 	checkLeapYear(year)
 	printSum(a, b)
+	var sum, difference int = multiReturn(10, 20) // Alternative - sum, difference := multiReturn(10, 20)
+	fmt.Printf("Sum is: %d, and Difference is: %d\n",sum, difference)
 }
 
 func checkLeapYear(year int) {
@@ -30,4 +32,9 @@ func add(num1, num2 int) int {
 
 func isLeapYear(year int) bool {
 	return (year%4 == 0 && year%100 != 0) || year%400 == 0
+}
+
+// Multi return function
+func multiReturn(a, b int) (int, int) {
+	return a+b, a-b
 }
