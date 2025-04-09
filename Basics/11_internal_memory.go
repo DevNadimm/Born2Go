@@ -22,7 +22,7 @@ func printFuncName(name string) {
 // radius এবং answer → Stack Segment-এ রাখা হয়
 func areaOfACircle(radius int) {
 	printFuncName("areaOfACircle") // অন্য ফাংশন কল
-	answer := pie * float64(radius) * float64(radius) // হিসেব
+	answer := pie * float64(radius) * float64(radius)
 	fmt.Println("Area of the circle:", answer)
 }
 
