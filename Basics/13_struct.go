@@ -8,7 +8,7 @@ type User struct {
 	role string
 }
 
-// Method for the User struct (outside the struct definition)
+// Method for the User struct (outside the struct definition) -- called as receiver function
 func (u User) greet() {
 	fmt.Printf("Hello, my name is %s and I'm an %s.\n", u.name, u.role)
 }
