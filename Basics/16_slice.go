@@ -5,6 +5,13 @@ import "fmt"
 /*
    ### Slice ###
    A slice is a dynamically-sized, flexible view into the elements of an array.
+
+   ### Topics ###
+	- Slice from existing array
+	- Slice from slice
+	- Make function with length
+	- Make function with length and capacity
+	- Empty slice or nill slice
 */
 
 func main() {
@@ -30,6 +37,12 @@ func main() {
 	s4 := make([]int, 3, 5) // Slice with make func with cap || pointer = ? | length = 3 | capacity = 5
 	// s4 = [0 0 0]
 	printDetailsForInt(&s4)
+
+	var emptySlice []int // Empty Slice or Nil Slice
+	// emptySlice = []
+	emptySlice = append(emptySlice, 1)
+	// emptySlice = [1]
+	fmt.Println(emptySlice)
 }
 
 func printDetails(arr *[]string) {
