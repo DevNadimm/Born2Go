@@ -31,7 +31,7 @@ Your hands-on journey to mastering Go programming! This repository contains begi
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/Born2Go.git
+git clone https://github.com/DevNadimm/Born2Go.git
 cd Born2Go
 ```
 
