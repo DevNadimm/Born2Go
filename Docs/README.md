@@ -6,7 +6,7 @@ Your hands-on journey to mastering Go programming! This repository contains begi
 ```
 ├── Basics/
 │   ├── 01_hello.go
-│   ├── 02_variable.go 
+│   ├── 02_variable.go
 │   ├── 03_conditional_statement.go
 │   ├── 04_function.go
 │   ├── 05_scope.go

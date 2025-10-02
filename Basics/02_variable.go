@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	var studentId int = 123942 
+	var studentId int = 123942
 	var studentName string = "Nadim Chowdhury"
 	var studentMajor string = "CSE"
 	var studentAge int = 21
