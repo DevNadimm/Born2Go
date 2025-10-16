@@ -2,25 +2,27 @@ package main
 
 import "fmt"
 
-type User struct {
-	name string
-	age  int
-	role string
+type Student struct {
+    Name string
+    Age int
+    Dob string
 }
 
-// Method for the User struct (outside the struct definition) -- called as receiver function
-func (u User) greet() {
-	fmt.Printf("Hello, my name is %s and I'm an %s.\n", u.name, u.role)
+func NewStudent (name string, age int, dob string) Student {
+    return Student{
+        Name: name,
+        Age: age,
+        Dob: dob,
+    }
 }
 
-func main() {
-	user := User{
-		name: "Nadim Chy",
-		age:  20,
-		role: "admin",
-	}
+func ViewDetails (student Student) {
+    fmt.Println("Student Name: ", student.Name)
+    fmt.Println("Age: ", student.Age)
+    fmt.Println("Date of Birth: ", student.Dob)
+}
 
-	fmt.Println("User Name:", user.name, "\nAge:", user.age, "\nRole:", user.role)
-
-	user.greet()
+func main () {
+    s1 := NewStudent("Nadim", 21, "2004-05-17")
+    ViewDetails(s1);
 }
